@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Vincent P. Van Dintel, 2016 -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/animsition/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>Professional</title>
+</head>
+
+<body>
+	<!-- Contact form modal. Hidden by default -->
+	<div class="modal" id="contactModal">
+		<div class="modal-content">
+			<span class="modal-close" id="modal-close">x</span>
+			<h2>Contact Me</h2>
+			<hr>
+			<address>Vincent Van Dintel</address>
+			<address>vvandint@bu.edu</address>
+			<address><a href="https://www.linkedin.com/in/vvandintel" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/linkedin-128.png" alt="" width="25"></a></address>
+		</div>
+	</div>
+	
+	<!-- Resume modal. Hidden by default -->
+	<div class="modal" id="resumeModal">
+		<div class="modal-content modal-content-resume">
+			<embed class="embed-doc" src="resources/Resume2016-developer.pdf" type="application/pdf">
+			<!-- <iframe class="embed-doc" src="https://docs.google.com/document/d/1__0Al3Bavj_nt5LIPafo61cSALuRepZhJl3AokZxtzg/edit?usp=sharing&rm=minimal"></iframe> -->
+		</div>
+	</div>
+	
+	<!-- navbar links use jQuery animsition plugin for page transitions -->
+	<header class="header">
+		<nav class="navbar">
+			<ul>
+				<li><a class="animsition-link" href="index.html">Home</a></li>
+				<li><a class="animsition-link" href="about.html">About Me</a></li>
+				<li><a class="animsition-link" href="gallery.html">Gallery</a></li>
+				<li><a class="active animsition-link" href="professional.html">Professional</a></li>
+				<li><a class="animsition-link" href="skills.html">Skills</a></li>
+				<li><a class="modal-link" id="openContactModal" href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="container"> 
+		<!-- javascript disabled warning -->
+		<noscript>Please enable JavaScript in your browser for the best website experience!</noscript>
+	
+		<section class="area-full center">
+			<article class="holder holder-full text">
+				<h2>Experience</h2>
+				<div class="panel2">
+					<p>I graduated from Cedarville University in 2014 with a Bachelors in Information Systems,
+					and I am currently employed as software developer at Liberty Mutual. 
+					I've previously worked in system administration and technical support roles.</p>
+					<p>I have a passion for using technology to solve problems, and have worn many hats to
+					accomplish this. I have found so far in my career that there is nothing that I can't
+					learn how to do if I apply myself.</p>
+					<button id="showResume">View Resume</button>
+				</div>
+				<div class="arrow"></div>
+			</article>
+		</section>
+		
+		<aside class="right">
+
+		</aside>
+	</div>
+	
+	<footer class="footer">
+		<p>&nbsp;&copy;Vincent P. Van Dintel</p>
+	</footer>
+
+	<!-- Load scripts at bottom (to increase performance) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+	<script src="lib/animsition/animsition.min.js"></script>
+	<script src="js/styles.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Vincent P. Van Dintel, 2016 -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/animsition/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>Skills</title>
+</head>
+
+<body>
+	<!-- Contact form modal. Hidden by default -->
+	<div class="modal" id="contactModal">
+		<div class="modal-content">
+			<span class="modal-close" id="modal-close">x</span>
+			<h2>Contact Me</h2>
+			<hr>
+			<address>Vincent Van Dintel</address>
+			<address>vvandint@bu.edu</address>
+			<address><a href="https://www.linkedin.com/in/vvandintel" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/linkedin-128.png" alt="" width="25"></a></address>
+		</div>
+	</div>
+	
+	<!-- navbar links use jQuery animsition plugin for page transitions -->
+	<header class="header">
+		<nav class="navbar">
+			<ul>
+				<li><a class="animsition-link" href="index.html">Home</a></li>
+				<li><a class="animsition-link" href="about.html">About Me</a></li>
+				<li><a class="animsition-link" href="gallery.html">Gallery</a></li>
+				<li><a class="animsition-link" href="professional.html">Professional</a></li>
+				<li><a class="active animsition-link" href="skills.html">Skills</a></li>
+				<li><a class="modal-link" id="openContactModal" href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Note: Tried to make the accordion panels and images visible when javascript is disabled, but I decided 
+		against it. Because this is pure js and not jQuery, there isn't an easy way to make
+		the elements hidden upon page load. Since there is a transition associated with the css 
+		show/hide classes, the elements would have a hiding animation upon loading the page,
+		which doesn't look good.
+	-->
+	<div class="container"> 
+		<section class="area-small">
+			<article class="holder holder-header">
+				<!--<h2>What I know</h2>-->
+				<button class="accordion" id="abtn1" onclick="togglePanel('panel1','abtn1')">Web Development</button>
+				<div class="panel text text-tight" id="panel1">
+					<ul>
+						<li>Java</li>
+						<li>Spring Boot</li>
+						<li>.NET</li>
+						<li>C#</li>
+					</ul>				
+				</div>
+				<button class="accordion" id="abtn2" onclick="togglePanel('panel2','abtn2')">System Administration</button>
+				<div class="panel text text-tight" id="panel2">
+					<ul>
+						<li>PowerShell</li>
+						<li>BASH</li>
+						<li>APM</li>
+					</ul>				
+				</div>
+				<button class="accordion" id="abtn3" onclick="togglePanel('panel3','abtn3')">Build & Release Engineering</button>
+				<div class="panel text text-tight" id="panel3">
+					<ul>
+						<li>Jenkins</li>
+						<li>Maven</li>
+						<li>Ant</li>
+					</ul>				
+				</div>				
+			</article>
+		</section>
+		
+		<aside class="area-main right">
+			<!-- javascript disabled warning -->
+			<noscript>Please enable JavaScript in your browser for the best website experience!</noscript>
+	
+			<!-- specific photos appear show up based on on selected accordion item -->
+			<article>
+				<ul class="image-list">
+					<li><img class="image-thumbnail" id="image1" src="http://steveperkins.com/wp-content/uploads/2014/02/spring-logo.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image2" src="https://plugins.cloudfoundry.org/images/cloud-foundry-logo.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image3" src="https://camo.githubusercontent.com/682541f39216718f231683a21e0b131a67d532c3/68747470733a2f2f73332d75732d776573742d322e616d617a6f6e6177732e636f6d2f7465737464726976656e6c6561726e696e676275636b65742f4353484152502e706e67" alt=""></li>
+					<li><img class="image-thumbnail" id="image4" src="https://upload.wikimedia.org/wikipedia/en/8/88/Java_logo.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image5" src="http://social.technet.microsoft.com/wiki/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-wikis-components-files-00-00-00-00-05/5315.powershell_2D00_logo.gif_2D00_550x0.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image6" src="https://ca-tech.jiveon.com/community/image/2390/2.png?a=74017" alt=""></li>
+					<li><img class="image-thumbnail" id="image7" src="http://4.bp.blogspot.com/-ixV6xC69QJA/UAcgvglAv-I/AAAAAAAAAHs/7gqs9M9EVwg/s1600/bash.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image8" src="https://blog.rosehosting.com/blog/wp-content/uploads/2014/11/jenkins.png" alt=""></li>
+					<li><img class="image-thumbnail" id="image9" src="http://d1ek4nyuq261bg.cloudfront.net/next/wp-content/uploads/2014/12/apachmaven.jpg" alt=""></li>
+					<li><img class="image-thumbnail" id="image10" src="https://ant.apache.org/manual/images/ant_logo_large.gif" alt=""></li>
+				</ul>
+			</article>
+		</aside>
+	</div>
+	
+	<footer class="footer">
+		<p>&nbsp;&copy;Vincent P. Van Dintel</p>
+	</footer>
+
+	<!-- Load scripts at bottom (to improve performance) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+	<script src="js/styles.js"></script>
+	<script src="lib/animsition/animsition.min.js"></script>	
+</body>
+
+</html>

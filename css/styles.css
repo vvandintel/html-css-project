@@ -1,0 +1,433 @@
+/* Vincent P. Van Dintel, 2016 */
+
+aside {
+	/*min-width: 300px;*/
+	margin: 0 auto;
+	text-align:center;
+	position:relative;	
+	overflow: hidden;
+	/*min-width: 250px;*/
+}
+
+aside img {
+	width: 100%;
+}
+
+body {
+	background-image: url("../images/spots_background_light_circles_69100_3840x2400.jpg");
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	color: #212121;
+	margin: 0px auto;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+	background-color: #FF5722;
+	border: none;
+	color: #003366;
+	cursor: pointer;
+	padding: 0px;
+	outline: none;
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+	width: 175px;
+	height: 50px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+button.accordion {
+	border-radius: 0px;
+	text-align: left;
+	cursor: pointer;
+	padding: 15px;
+	transition: 0.2s;
+	font-size: 100%;
+	width: 100%;	
+	transition: 0.2s;
+}
+
+button.accordion.active, button.accordion:hover {
+	background-color: #003366;
+	color: #FFF;
+}
+
+button.accordion:before {
+	content: "\02795";
+	color: inherit;
+	
+	float: left;
+	font-size: inherit;
+	/*padding: auto auto 5px 10px;*/
+	/*margin: inherit 10px 10px;*/
+	margin-right: 10px;
+}
+
+button.accordion.show:before{
+	content: "\2796";
+}
+
+figcaption {
+	color: white;
+}
+
+footer {
+	/*color: #FFFFFF;
+	background-color: #000080;*/
+	color: #FFF;
+	position: relative;
+    bottom: 0;
+	width: 100%;
+	height: 25px;
+	padding: 0;
+}
+
+form {
+	padding: 10px;
+}
+
+
+h1 {
+	color: white;
+	text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+	font-size: 30pt;
+
+}
+
+h2 {
+	padding: 0;
+	margin: 5px;
+}
+
+img.collage {
+	/*width: 100px;*/
+	height: 125px;
+	margin: 10px;
+	border: 1px solid black;
+	opacity: 0.3;
+}
+
+img.collage:hover {
+	opacity: 1;
+}
+
+label, input {
+	padding-left: 10px;
+}
+
+noscript {
+	color: red;
+	background-color: white;
+	font-weight: bold;
+}
+
+section {
+	width: 75%;
+	float: left;
+	min-width: 400px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background: #ADD8E6;
+}
+
+tr:nth-child(odd) {
+	
+}
+
+.area-small {
+	width: 30%;
+}
+
+.area-main {
+	width: 65%;
+}
+
+.area-full {
+	width: 95%;
+}
+
+.arrow {
+	width: 40px;
+	height: 40px;
+	margin: 0px auto;
+	display: block;
+	background-image: url("../images/down-arrow.png");
+	background-size: 100%;
+	transition:all 0.2s;
+}
+
+.arrow-reverse {
+	background-image: url("../images/up-arrow.png");
+	transition:all 0.2s;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+/*.arrow:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}*/
+
+.caption {
+	font-size: 75%;
+	font-style: italic;
+}
+
+.carousel  ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+	display: block;
+	margin: 15px;
+}
+
+.container {
+	min-height: 100%;
+	min-width: 550px;
+	height: 100%;
+	padding: 0px;
+	overflow: auto;
+	margin: 20px;
+}
+
+.embed-doc {
+	overflow:hidden;
+	border: none;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.embed-video {
+	overflow:hidden;
+	border: none;
+	height: 400px;
+	width: 100%;
+}
+
+.header {
+	color: #FFF;
+	/*background-color: #9C27B0;*/
+	padding: 15px;
+}
+
+.holder {
+	/*border: 1px solid #000080;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+	margin: 10px;*/
+	background:#FFF;
+	margin: 0px auto 30px auto;
+	box-shadow: 0 10px 6px -6px #777;
+	text-align:center;
+	position:relative;	
+	overflow: hidden;
+}
+
+.holder h2 {
+	text-align:center;
+	position:relative;
+	padding-top: 10px;
+}
+
+.holder-header {
+	background-color: #003366;
+}
+
+.image-list {}
+
+.image-list  li {
+	list-style: none;
+	display: inline-block;
+}
+
+.image-thumbnail {
+	width: auto;
+	height: 100px;
+	margin: 10px;
+	background-color: white;
+	transition: 0.2s ease-in-out;
+	display: none;
+}
+
+.image-thumbnail.show {
+	display: inline-block;
+}
+
+.image-zoom {
+	max-width: 400px;
+	/*width: 100%;
+	height: 100%;*/
+	/*max-height: auto;*/
+	display: inline-block;
+}
+
+.left {
+	float: left;
+	width: 25%;
+}
+
+.logo {
+	height: 100px;
+}
+
+.logo-list {
+	margin: 0px auto;
+	width: 100%;
+	display: inline;
+}
+
+.logo-list li {
+	list-style: none;
+	float: left;
+	margin: 20px;
+}
+
+.modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	z-index: 1;
+}
+
+.modal-content {
+	background-color: #fefefe;
+	padding: 10px 15px 10px 15px;
+	margin: auto;
+	width: 400px;
+	text-align: center;
+	
+	position:relative;
+	top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+}
+
+.modal-content address {
+	margin: 15px;
+}
+.modal-content img {
+	margin: 0px auto
+}
+
+.modal-content-resume {
+	width: 75%;
+	padding: 0px;
+	margin: 0px auto;
+	height: 100%;
+	
+}
+
+.modal-close {
+	color: #d3d3d3;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.modal-link {
+	cursor: pointer;
+}
+
+.navbar {
+	/*background-color: #7B1FA2;*/
+	background-color: #003366;
+	filter:alpha(opacity=75);
+	-moz-opacity:0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	color: #FFFFFF;
+	display: block;
+	text-decoration:none; 
+	font-weight: bold;
+	padding: 10px;
+	display: block;
+}
+
+.navbar li a:hover {
+	color: #E1BEE7;
+}
+
+.navbar a.active {
+	background-color: #FF5722;
+	color: #FFF;
+}
+
+.navbar ul {
+	list-style-type: none;	
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.panel {
+	background-color: #FFF;
+	/*display: none;*/
+	max-height: 0;
+	padding: 0 10px;
+	opacity: 0;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+}
+
+.panel.show {
+	opacity: 1;
+	max-height: 1000px;
+}
+
+.panel2 {
+	/*display: none;*/
+	margin: 1px;
+}
+
+.right {
+	float:right;
+}
+
+.text {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: #FFFFFF;
+	text-align: left;
+}
+
+.text-tight {
+	padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	[class*="area-"] {
+		width: 95%;
+	}
+	
+}

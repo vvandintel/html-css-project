@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Vincent P. Van Dintel, 2016 -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/animsition/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>About</title>
+</head>
+
+<body>
+	<!-- Contact form modal. Hidden by default -->
+	<div class="modal" id="contactModal">
+		<div class="modal-content">
+			<span class="modal-close" id="modal-close">x</span>
+			<h2>Contact Me</h2>
+			<hr>
+			<address>Vincent Van Dintel</address>
+			<address>vvandint@bu.edu</address>
+			<address><a href="https://www.linkedin.com/in/vvandintel" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/linkedin-128.png" alt="" width="25"></a></address>
+		</div>
+	</div>
+	
+	<!-- navbar links use jQuery animsition plugin for page transitions -->
+	<header class="header">
+		<nav class="navbar">
+			<ul>
+				<li><a class="animsition-link" href="index.html">Home</a></li>
+				<li><a class="active animsition-link" href="about.html">About Me</a></li>
+				<li><a class="animsition-link" href="gallery.html">Gallery</a></li>
+				<li><a class="animsition-link" href="professional.html">Professional</a></li>
+				<li><a class="animsition-link" href="skills.html">Skills</a></li>
+				<li><a class="modal-link" id="openContactModal" href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="container">
+		<!-- javascript disabled warning -->
+		<noscript>Please enable JavaScript in your browser for the best website experience!</noscript>
+	
+		<aside class="area-small right">
+			<figure>
+				<img class="" src="http://content.sportslogos.net/logos/53/53/full/671.png" alt="Me">
+				<figcaption class="caption">Go Red Sox!</figcaption>
+			</figure>
+		</aside>
+	
+		<section class="area-main center">
+			<article class="holder text">
+				<h2>My Interests</h2>
+				<div class="panel2">
+					<p>I am very passionate about technology and constantly try to learn whenever possible, at work, at school, and in my free time.
+					A few of my diverse interests include:</p>
+					<ul>
+						<li><a href="http://www.ccsb-sing.org/index.html" target="_blank">Singing in choirs</a></li>
+						<li>Playing piano</li>
+						<li>Softball</li>
+						<li>Volleyball</li>
+						<li>Basketball</li>
+					</ul>
+				</div>
+				<div class="arrow"></div>
+			</article>
+			
+			<article class="holder text">
+				<h2>Community Chorus</h2>
+				<div class="panel2">
+					<p>If you look closely you can spot me in the middle of the first row.</p>
+					<iframe class="embed-video" src="https://www.youtube.com/embed/XolWhsTbpqc" allowfullscreen></iframe>
+				</div>
+				<div class="arrow"></div>
+			</article>
+			
+			<article class="holder text">
+				<h2>Fun Facts</h2>
+				<div class="panel2">
+					<ul>
+						<li>Born in the Netherlands</li>
+						<li>Built my first computer at age 13</li>
+						<li>Never ridden a roller coaster</li>
+					</ul>
+				</div>
+				<div class="arrow"></div>
+			</article>
+		</section>
+	</div>
+	
+	<footer class="footer">
+		<p>&nbsp;&copy;Vincent P. Van Dintel</p>
+	</footer>
+	
+	<!-- Load scripts at bottom (to increase performance) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+	<script src="lib/animsition/animsition.min.js"></script>
+	<script src="js/styles.js"></script>
+
+</body>
+
+</html>

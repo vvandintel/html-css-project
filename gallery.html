@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Vincent P. Van Dintel, 2016 -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/animsition/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>Gallery</title>
+</head>
+
+<body>
+	<!-- Contact form modal. Hidden by default -->
+	<div class="modal" id="contactModal">
+		<div class="modal-content">
+			<span class="modal-close" id="modal-close">x</span>
+			<h2>Contact Me</h2>
+			<hr>
+			<address>Vincent Van Dintel</address>
+			<address>vvandint@bu.edu</address>
+			<address><a href="https://www.linkedin.com/in/vvandintel" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/linkedin-128.png" alt="" width="25"></a></address>
+		</div>
+	</div>
+	
+	<!-- modal for displaying photo from image gallery -->
+	<div class="modal" id="imageModal">
+		<div class="modal-content modal-content-image" id="imageModalContent">
+			<span class="modal-close" id="modal-close-img">x</span>
+		</div>
+	</div>
+	
+	<!-- navbar links use jQuery animsition plugin for page transitions -->	
+	<header class="header">
+		<nav class="navbar">
+			<ul>
+				<li><a class="animsition-link" href="index.html">Home</a></li>
+				<li><a class="animsition-link" href="about.html">About Me</a></li>
+				<li><a class="active animsition-link" href="gallery.html">Gallery</a></li>
+				<li><a class="animsition-link" href="professional.html">Professional</a></li>
+				<li><a class="animsition-link" href="skills.html">Skills</a></li>
+				<li><a class="modal-link" id="openContactModal" href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<!-- javascript disabled warning -->
+		<noscript>Please enable JavaScript in your browser for the best website experience!</noscript>
+
+		<section class="area-full center">
+			<article class="holder text carousel">
+				<h2>Photos of Me</h2>
+				<ul class="carousel">
+					<li><img class="collage" src="images/me.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me2.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me3.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me4.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me5.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me6.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me7.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me8.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me9.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me10.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me11.jpg" alt="Me"></li>
+					<li><img class="collage" src="images/me12.jpg" alt="Me"></li>
+					
+				</ul>
+			</article>
+		</section>
+	</div>
+	
+	<footer>
+		<p>&nbsp;&copy; Vincent P. Van Dintel</p>
+	</footer>
+	
+	<!-- Load scripts at bottom (to increase performance) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+	<script src="lib/animsition/animsition.min.js"></script>
+	<script src="js/styles.js"></script>
+	
+</body>
+
+</html>

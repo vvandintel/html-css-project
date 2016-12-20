@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Vincent P. Van Dintel, 2016 -->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/animsition/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>Home</title>
+</head>
+
+<body>
+	<!-- Contact form modal. Hidden by default -->
+	<div class="modal" id="contactModal">
+		<div class="modal-content">
+			<span class="modal-close" id="modal-close">x</span>
+			<h2>Contact Me</h2>
+			<hr>
+			<address>Vincent Van Dintel</address>
+			<address>vvandint@bu.edu</address>
+			<address><a href="https://www.linkedin.com/in/vvandintel" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/linkedin-128.png" alt="" width="25"></a></address>
+		</div>
+	</div>
+	
+	<!-- navbar links use jQuery animsition plugin for page transitions -->
+	<header class="header">
+		<nav class="navbar">
+			<ul>
+				<li><a class="active animsition-link" href="index.html">Home</a></li>
+				<li><a class="animsition-link" href="about.html">About Me</a></li>
+				<li><a class="animsition-link" href="gallery.html">Gallery</a></li>
+				<li><a class="animsition-link" href="professional.html">Professional</a></li>
+				<li><a class="animsition-link" href="skills.html">Skills</a></li>
+				<li><a class="modal-link" id="openContactModal" href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+		<h1>Welcome to my site!</h1>
+	</header>
+
+	<div class="container">
+		<!-- javascript disabled warning -->
+		<noscript>Please enable JavaScript in your browser for the best website experience!</noscript>
+	
+		<aside class="area-small left">
+			<figure>
+				<img src="images/photo.jpg" alt="Me">
+				<figcaption class="caption">Enjoying the great outdoors of New Hampshire</figcaption>
+			</figure>
+		</aside>
+		
+		<section class="area-main center">
+			<article class="holder text">
+				<h2>Intro</h2>
+				<p class="panel2">Hi, my name is Vince! Welcome to my homepage.
+				I was born in the <a href="http://wikitravel.org/en/Netherlands" target="_blank">Netherlands</a> 
+				and moved to the U.S. when I was three, growing up in the Southern Maine/New Hampshire area.</p>
+				<div class="arrow"></div>
+			</article>
+			<article class="holder holder-full text">
+				<h2>Tech Stack</h2>
+				<p class="panel2">This site was built using HTML5, JavaScript, and jQuery.</p>
+				<ul class="logo-list panel2">
+					<li><img class="logo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsV91qXEjldjFikqjkV3dYwwWJsJXGuhaESiF7cagAX627E4XD3OhbT3u7" alt="HTML5/CSS3"></li>
+					<li><img class="logo" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPmgqMhMWpHcBWhVytBUpWhrq-IRr73dQnYIhDF7uHXm4MChK8Al7SPTs" alt="JavaScript"></li>
+					<li><img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8i0odTCgOH24F1wMetpVmth7MTxZnmwqjWObhp_P6umea5PZo7kwZJaW" alt="jQuery"></li>
+				</ul>
+				<div class="arrow"></div>
+			</article>
+		</section>
+	</div>
+	
+	<footer>
+		<p>&nbsp;&copy; Vincent P. Van Dintel</p>
+	</footer>
+	
+	<!-- Load scripts at bottom (to increase performance) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+	<script src="lib/animsition/animsition.min.js"></script>
+	<script src="js/styles.js"></script>
+	
+</body>
+
+</html>
